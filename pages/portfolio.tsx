@@ -12,7 +12,7 @@ export default function Portfolio() {
   const buttons = [
     {title: "All",value: "all"},
     {title: "As Techlead",value: "techlead"},
-    {title: "As Developer",value: "developer"},
+    {title: "As Dev",value: "developer"},
     {title: "Web Sites",value: "websites"},
     {title: "Systems",value: "systems"},
   ]

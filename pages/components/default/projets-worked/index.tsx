@@ -21,9 +21,9 @@ type Props = {
 
 export default function ProjectsWorked({projects}: any) {
     return (
-        <section style={{marginTop: 50}}>
+        <section style={{marginTop: 50}} className="d-flex j-c-center j-c-c-center">
             <Masonry
-                columns={4}
+                columns={{lg:4, xs:1}}
                 defaultHeight={450}
                 defaultColumns={2}
                 defaultSpacing={2}
@@ -32,7 +32,7 @@ export default function ProjectsWorked({projects}: any) {
                 projects?.map((item, index) => {
                     return (
                         <Grow in={true}>
-                            <Grid key={index} item md={3}>
+                            <Grid key={index} item md={3} className="d-flex j-c-center j-c-c-center">
                                 <CardRecipeReview functions={item.function} name={item.name} links={item.links} shortText={item.showText} longText={item.longText} projectColor={""}/>
                             </Grid>
                         </Grow>

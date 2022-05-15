@@ -10,7 +10,7 @@ export default function CardsMyExperiences() {
             {
                 datasAboutExperiences.map((item, index) => {
                     return (
-                        <Grid key={index} item md={3}>
+                        <Grid key={index} item md={3} xs={12}>
                             <CardData icon={<InsertEmoticonIcon/>} quantity={item.value} label={item.label}/>
                         </Grid>
                     )

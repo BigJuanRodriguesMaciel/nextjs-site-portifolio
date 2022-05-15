@@ -13,7 +13,7 @@ export default function ProgressExperiences() {
             {
               datasAboutSkills.map((item, index) => {
                 return(
-                  <Grid key={index} item md={6}>
+                  <Grid key={index} item xs={12} md={6}>
                     <ProgressLine label={item.label} progress={item.value}/>
                   </Grid>
                 )

@@ -5,9 +5,17 @@
         li, a{
             margin-right: 15px
         }
+        li{
+            @media only screen and (max-width: 992px) {
+                display: none
+            }
+        }
     }
     #social-midia{
         justify-content: start;
+        @media only screen and (max-width: 992px) {
+            justify-content: center;
+        }
         li{
             background-color: rgba(255,255,255,0.1);
             width: 40px;

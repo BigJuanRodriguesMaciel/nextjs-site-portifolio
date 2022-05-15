@@ -20,7 +20,7 @@ export default function Resume() {
           <>
           <PageTitle title="check my resume"/>
             <Masonry
-              columns={2}
+              columns={{ xs: 1, lg:2 }}
               defaultHeight={450}
               defaultColumns={2}
               defaultSpacing={0}

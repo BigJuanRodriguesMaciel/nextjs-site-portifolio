@@ -16,12 +16,12 @@ export default function Contact() {
         <main id="page-about">
             <Gap>
                 <>
-                    <PageTitle title="My Works"/>
+                    <PageTitle title="Contact me"/>
                     <Grid container spacing={2}>
                         {
                             datasContact.map((item, index) => {
                                 return(
-                                    <Grid key={index} item md={6}>
+                                    <Grid key={index} item md={6} xs={12}>
                                         <CardContact key={index} type={item.type} title={item.title} link={{
                                             icon: item.link.icon,
                                             to: item.link.to,

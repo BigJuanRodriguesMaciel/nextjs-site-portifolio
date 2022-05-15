@@ -1,6 +1,10 @@
 .big-title{
     font-size: 3rem;
     margin-bottom: 0;
+    @media only screen and (max-width: 600px) {
+        font-weight: 700;
+        text-align: center;
+    }
 }
 
 .medium-title{

@@ -84,7 +84,7 @@ export default function FormContact({}: Props) {
                             {
                                 inputsForm.map((item, index) => {
                                     return(
-                                        <Grid item md={index < 2 ? 6 : 12} key={index}>
+                                        <Grid item xs={12} md={index < 2 ? 6 : 12} key={index}>
                                             <div style={{width: index == 0 ? '99%' : '100%'}}>
                                                 <label className="f-size-12" htmlFor={`input_${item.name}`}>{item.name}</label>
                                                 <Textbox
