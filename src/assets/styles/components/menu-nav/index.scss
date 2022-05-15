@@ -1,0 +1,28 @@
+@import "../../colors.scss";
+
+#menuNavLinks{
+    ul{
+        li, a{
+            margin-right: 15px
+        }
+    }
+    #social-midia{
+        justify-content: start;
+        li{
+            background-color: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            border-radius: 100%;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            &:hover{
+                background-color: $main-highlight;
+            }
+            a{
+                margin: 0;
+            }
+        }
+    }
+}

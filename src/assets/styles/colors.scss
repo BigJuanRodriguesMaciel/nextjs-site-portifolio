@@ -1,0 +1,43 @@
+$main-highlight: #18d26e;
+$main-gold: #ffbb2c;
+$main-blue: #5578ff;
+$main-pink: #e80368;
+$main-purple: #e361ff;
+$main-orange: #ff5828;
+
+$text-opacity-05: rgba(255, 255, 255, 0.05);
+$text-opacity-15: rgba(255, 255, 255, 0.15);
+$text-opacity-50: rgba(255, 255, 255, 0.5);
+$text-opacity-75: rgba(255, 255, 255, 0.75);
+
+$blue-i: #47aeff;
+$blue-ii: #4233ff;
+
+$orange-i: #ffa76e;
+
+$gold-i: #b2904f;
+
+$pink-i: #b20969;
+
+$colors: (
+    "main-highlight" : $main-highlight,
+    "main-gold" : $main-gold,
+    "main-blue" : $main-blue,
+    "main-pink" : $main-pink,
+    "main-purple" : $main-purple,
+    "main-orange" : $main-orange,
+    "text-opacity-fff-75" : $text-opacity-75,
+    "text-opacity-fff-50" : $text-opacity-50,
+    "text-opacity-fff-15": $text-opacity-15,
+    "blue-i" : $blue-i,
+    "blue-ii" : $blue-ii,
+    "orange-i" : $orange-i,
+    "gold-i" : $gold-i,
+    "pink-i" : $pink-i,
+);
+
+@each $name, $color in $colors{
+    .color-#{$name} {
+         color: $color!important;
+    }
+}

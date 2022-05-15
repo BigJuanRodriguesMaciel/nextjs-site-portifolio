@@ -1,0 +1,14 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./functions.scss";
+@import "./global.scss";
+@import "./reset.scss";
+
+@import "./components/title-describe";
+@import "./components/menu-nav";
+@import "./components/card-data";   
+@import "./components/progress-experiences";
+@import "./components/testimonials/effect-cards";
+
+@import "./pages/about";
+@import "./pages/resume/";

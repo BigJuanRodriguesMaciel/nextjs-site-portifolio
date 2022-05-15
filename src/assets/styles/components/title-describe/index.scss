@@ -1,0 +1,12 @@
+@import "../../colors.scss";
+
+#title_describe{
+    h2{
+        color: $text-opacity-75
+    }
+    ul{
+        li, a{
+          color: $text-opacity-75!important;
+        }
+    }
+}

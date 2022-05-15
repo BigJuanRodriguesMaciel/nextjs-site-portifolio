@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+ul{
+    list-style-type: none;
+    margin: 0!important;
+    padding: 0!important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    li{
+        display: inline-flex
+    }
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 300;
+}
+
+.menu-after-active{
+    &::before{
+        transition: .4s;
+        content: "";
+        position: absolute;
+        color: $main-highlight;
+        width: 50%;
+        height: 2px;
+        background-color: $main-highlight;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+a{
+    text-decoration: none!important;
+    color: #fff!important;
+    position: relative;
+    &::after{
+        transition: .4s;
+        content: "";
+        position: absolute;
+        color: $main-highlight;
+        width: 0;
+        height: 2px;
+        background-color: $main-highlight;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+    }
+    &:hover::after{
+        width: 50%;
+    }
+}
